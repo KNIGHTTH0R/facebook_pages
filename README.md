@@ -20,8 +20,8 @@ Or install it yourself as:
     token = 'mytoken123549'
     page_id = '12345'
 
-    api = FacebookAPI.new token
-    my_page = FacebookPage.new page_id,api
+    api = FacebookPages::FacebookAPI.new token
+    my_page = FacebookPages::FacebookPage.new page_id,api
 
     likes = my_page.likes
 

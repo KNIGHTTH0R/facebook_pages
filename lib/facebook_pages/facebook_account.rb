@@ -4,7 +4,7 @@ module FacebookPages
             @api = api if api
         end
 
-        def get_pages
+        def pages
             res = @api.get("/me/accounts")
             res["data"]
         end
