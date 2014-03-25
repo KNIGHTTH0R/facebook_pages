@@ -1,3 +1,6 @@
+require 'active_support'
+require 'active_support/time'
+
 module FacebookPages
     class FacebookPage
         def initialize id, api = nil
