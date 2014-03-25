@@ -17,7 +17,9 @@ Or install it yourself as:
     $ gem install facebook_pages
 
 ## Usage
-    token = 'mytoken123549'
+    require 'facebook_pages'
+
+    token = '123456'
     page_id = '12345'
 
     api = FacebookPages::FacebookAPI.new token
@@ -34,11 +36,9 @@ Or install it yourself as:
     post_likes_count = post.likes.count
     post_comments_array = post.comments
 
-    page_daily_insights = page.insights.daily_insights
-    page_weekly_insights = page.insights.weekly_insights
-    page_lifetime_insights = page.insights.lifetime_insights
-
-
+    page_daily_insights = my_page.insights.daily_insights
+    page_weekly_insights = my_page.insights.weekly_insights
+    page_lifetime_insights = my_page.insights.lifetime_insights
 
 
 ## Contributing
