@@ -9,7 +9,7 @@ module FacebookPages
             build_posts
         end
 
-        def owner_posts limit = nil
+        def admin_posts limit = nil
             if !limit.nil?
                 return filter_posts(true).take(limit)
             end
